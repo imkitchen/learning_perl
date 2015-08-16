@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+
+print "1つ目の数: ";
+$lhs = <STDIN>;
+
+print "2つ目の数: ";
+$rhs = <STDIN>;
+
+print "積: " . $lhs * $rhs . "\n";
