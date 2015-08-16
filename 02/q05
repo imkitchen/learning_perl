@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+
+print "文字列: ";
+$str = <STDIN>;
+
+print "繰り返す回数: ";
+$rep = <STDIN>;
+
+print $str x $rep;
