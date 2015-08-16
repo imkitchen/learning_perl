@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+
+print "半径: ";
+$r = <STDIN>;
+
+if ($r < 0) {
+  $result = 0;
+} else {
+  $result = $r * 2 * 3.141592654;
+}
+print "円周: $result\n";
