@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+
+@names = qw(fred betty barney dino wilma pebbles bamm-bamm);
+@input = <STDIN>;
+
+foreach $i (@input) {
+    print "$names[$i]\n";
+}
+
