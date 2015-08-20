@@ -1,0 +1,17 @@
+#!/usr/bin/env perl
+use 5.014;
+
+sub greet {
+    my $greet_to = $_[0];
+    state $last;
+
+    if (!defined($last)) {
+        print "Hi $greet_to! You are the first one here!\n";
+    } else {
+        print "Hi $greet_to! $last is also here!\n";
+    }
+    $last = $greet_to;
+}
+
+greet( "Fred" );
+greet( "Barney" );
