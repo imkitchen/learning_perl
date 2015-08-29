@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+use 5.010;
+use autodie;
+
+my $fh, @lines;
+foreach my $filename (@ARGV) {
+  open $fh, '<', $filename;
+  while(<$fh>) {
+    push @lines, $_;
+  }
+  print reverse @lines;
+  @lines = ();
+}
